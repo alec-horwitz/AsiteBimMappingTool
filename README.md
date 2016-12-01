@@ -1,20 +1,20 @@
 CONTENTS OF THIS FILE
 ---------------------
-*BimAsiteMappingTool.exe
-*Data/settings.txt
-*Data/ReadMe.txt
-*Data/BimAsiteStatusTrans.txt
-*Archive/
+-BimAsiteMappingTool.exe
+-Data/settings.txt
+-Data/ReadMe.txt
+-Data/BimAsiteStatusTrans.txt
+-Archive/
 
 
 
 
  TABLE OF CONTENTS
 ---------------------
-*Introduction
-*Configuration
-*Troubleshooting
-*Support
+-Introduction
+-Configuration
+-Troubleshooting
+-Support
 
 
 
