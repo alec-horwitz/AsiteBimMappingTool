@@ -110,19 +110,19 @@ follows:
  two ways you can enter a path are as follows:
 
   * You can enter a relative(to the directory the program is in) file path 
-   such as "relative/file/path/". This tells the program to look for a file
-   with in a sub directory of the folder that the program lives in. If you 
-   give it no path after "_DIR:" the program will look for the file in the
-   exact same directory as where the program lives. For example:
+    such as "relative/file/path/". This tells the program to look for a file
+    with in a sub directory of the folder that the program lives in. If you 
+    give it no path after "_DIR:" the program will look for the file in the
+    exact same directory as where the program lives. For example:
 
-    * If you were to type "Data/" after the line "ASITE_INPUT_DIR:" in the form 
-    "ASITE_INPUT_DIR: Data/" the program will look for a .xls file containing 
-    prequalification data in a folder called "Data" in the same directory that 
-    the program is stored in. 
+      * If you were to type "Data/" after the line "ASITE_INPUT_DIR:" in the form 
+        "ASITE_INPUT_DIR: Data/" the program will look for a .xls file containing 
+        prequalification data in a folder called "Data" in the same directory that 
+        the program is stored in. 
 
-    * If you were to type nothing after the line "ASITE_INPUT_DIR:" the program 
-    will look for a .xls file containing prequalification data in same folder 
-    that the program is stored in.
+      * If you were to type nothing after the line "ASITE_INPUT_DIR:" the program 
+        will look for a .xls file containing prequalification data in same folder 
+        that the program is stored in.
 
   * You can enter an absolute file path such as "N:/whatever/path/you/want/".
    If you are an experienced Windows or Linux user this should be the
