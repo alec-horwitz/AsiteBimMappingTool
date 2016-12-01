@@ -19,8 +19,8 @@ CONTENTS OF THIS FILE
 
 
 
-    #INTRODUCTION
-
+   INTRODUCTION
+---------------------
 This program is made to help identify the answer to three important 
 questions about the differences between the BIM 360 and Asite databases 
 for the prequalification process. The three questions this program helps 
@@ -45,8 +45,8 @@ the instructions provided in the CONFIGURATION section.
 
 
 
-    #CONFIGURATION
-
+   CONFIGURATION
+---------------------
 This section of the ReadMe is a detailed description of how this 
 program functions. It explains how to give the program an input 
 that it expects and why. This section should be able to explain any 
@@ -292,8 +292,8 @@ do not leave spaces before or after the Asite statuses.
 
 
 
-   #TRUBLESHOOTING 
-
+   TRUBLESHOOTING 
+---------------------
 This section of the ReadMe focuses on just the error messages and reasons why 
 the program would appear to not run produce no error messages. Here you will find 
 a list of error messages followed by solves to them. If the program has no error 
@@ -440,8 +440,8 @@ crash the program with no error message.
 
 
 
-      #SUPPORT
-
+   SUPPORT
+---------------------
 If user are having issues and this document has not helped you may contact me the creator 
 of the program at:
 
