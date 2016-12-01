@@ -19,8 +19,8 @@ CONTENTS OF THIS FILE
 
 
 
-    INTRODUCTION
----------------------
+    #INTRODUCTION
+
 This program is made to help identify the answer to three important 
 questions about the differences between the BIM 360 and Asite databases 
 for the prequalification process. The three questions this program helps 
@@ -45,8 +45,8 @@ the instructions provided in the CONFIGURATION section.
 
 
 
-    CONFIGURATION
----------------------
+    #CONFIGURATION
+
 This section of the ReadMe is a detailed description of how this 
 program functions. It explains how to give the program an input 
 that it expects and why. This section should be able to explain any 
@@ -56,8 +56,7 @@ program works on a whole refer to the TRUBLESHOOTING section. We will
 start with the settings.txt and then move onto the other inputs the 
 program reads in.
 
-
-############# About the settings.txt #############
+** About the settings.txt **
 The settings.txt file must be in the same directory as this program. 
 This program is very particular about how this file is set up. Do not
 change the name of this file and do not add lines that aren't required. 
@@ -207,7 +206,7 @@ follows:
   form "Translation_Delimiter: /". The program would the read "Ralph, check this out" as one
   status without a problem.
 
-************* Advanced Program Functions for File Handling *************
+** Advanced Program Functions for File Handling **
 If the path given after "DUMP_FOLDER:" is the same as the path given for any 
 or all "_DIR:" lines, the data of the file found in the path(s) will be read in without any changes 
 to the filename(s).
@@ -229,7 +228,7 @@ simply generate a new file called "outputFilename-160719-211447.xlsx" along side
 without consequence.
 
 
-############# About the translation .txt #############
+** About the translation .txt **
 The purpose of the translation .txt is so that this program can match a BIM 
 prequalification status to its Asite equivalent. Regardless of whether there is a 
 difference in statuses between the two databases the still must be a the 
@@ -293,8 +292,8 @@ do not leave spaces before or after the Asite statuses.
 
 
 
-   TRUBLESHOOTING 
----------------------
+   #TRUBLESHOOTING 
+
 This section of the ReadMe focuses on just the error messages and reasons why 
 the program would appear to not run produce no error messages. Here you will find 
 a list of error messages followed by solves to them. If the program has no error 
@@ -392,7 +391,7 @@ what to name it.
 
 
 
-############ IF SOMETHING WENT WRONG AND YOU GOT NO ERROR MESSAGE ############ 
+** IF SOMETHING WENT WRONG AND YOU GOT NO ERROR MESSAGE ** 
 
 If you get no error message and the program produces nothing then most the likely
 reason is that there is something wrong with the file types specified in the 
@@ -441,8 +440,8 @@ crash the program with no error message.
 
 
 
-      SUPPORT
----------------------
+      #SUPPORT
+
 If user are having issues and this document has not helped you may contact me the creator 
 of the program at:
 
