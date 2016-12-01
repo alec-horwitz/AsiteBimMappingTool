@@ -102,117 +102,117 @@ lines. There are several different sets of rules you must follow to edit these
 lines correctly depending on what is just before the ":". These rules are as 
 follows:
 
-⋅-If the line has a "_DIR:" then you must give it a path to a folder that contains
-  a file of the appropriate file type. There are two ways you can enter a path and 
-  the program does not care which you use as long as you are consistent. Being 
-  inconsistent with which method you use to describe a file path may produce unforeseen 
-  consequences and will defiantly cause the program to not function correctly. The
-  two ways you can enter a path are as follows:
+-If the line has a "_DIR:" then you must give it a path to a folder that contains
+ a file of the appropriate file type. There are two ways you can enter a path and 
+ the program does not care which you use as long as you are consistent. Being 
+ inconsistent with which method you use to describe a file path may produce unforeseen 
+ consequences and will defiantly cause the program to not function correctly. The
+ two ways you can enter a path are as follows:
 
-  ⋅⋅ -You can enter a relative(to the directory the program is in) file path 
-    such as "relative/file/path/". This tells the program to look for a file
-    with in a sub directory of the folder that the program lives in. If you 
-    give it no path after "_DIR:" the program will look for the file in the
-    exact same directory as where the program lives. For example:
+  -You can enter a relative(to the directory the program is in) file path 
+   such as "relative/file/path/". This tells the program to look for a file
+   with in a sub directory of the folder that the program lives in. If you 
+   give it no path after "_DIR:" the program will look for the file in the
+   exact same directory as where the program lives. For example:
 
- ⋅⋅⋅   -If you were to type "Data/" after the line "ASITE_INPUT_DIR:" in the form 
-     "ASITE_INPUT_DIR: Data/" the program will look for a .xls file containing 
-     prequalification data in a folder called "Data" in the same directory that 
-     the program is stored in. 
+   -If you were to type "Data/" after the line "ASITE_INPUT_DIR:" in the form 
+    "ASITE_INPUT_DIR: Data/" the program will look for a .xls file containing 
+    prequalification data in a folder called "Data" in the same directory that 
+    the program is stored in. 
 
-   ⋅⋅⋅ -If you were to type nothing after the line "ASITE_INPUT_DIR:" the program 
-     will look for a .xls file containing prequalification data in same folder 
-     that the program is stored in.
+   -If you were to type nothing after the line "ASITE_INPUT_DIR:" the program 
+    will look for a .xls file containing prequalification data in same folder 
+    that the program is stored in.
 
-⋅⋅   -You can enter an absolute file path such as "N:/whatever/path/you/want/".
-    If you are an experienced Windows or Linux user this should be the
-    type of directory scheme you are used to seeing(In Windows they use 
-    '\' instead of '/' but this program doesn't care which you use). For example
-    if you typed "C:/Desktop/" after "BIM_INPUT_DIR:" in the form 
-    "BIM_INPUT_DIR: C:/Desktop/" the program will look for a .csv file containing 
-    prequalification data on the Desktop folder on the C drive.
+  -You can enter an absolute file path such as "N:/whatever/path/you/want/".
+   If you are an experienced Windows or Linux user this should be the
+   type of directory scheme you are used to seeing(In Windows they use 
+   '\' instead of '/' but this program doesn't care which you use). For example
+   if you typed "C:/Desktop/" after "BIM_INPUT_DIR:" in the form 
+   "BIM_INPUT_DIR: C:/Desktop/" the program will look for a .csv file containing 
+   prequalification data on the Desktop folder on the C drive.
 
-⋅ -There are also two ways you can have this program look for a file:
+-There are also two ways you can have this program look for a file:
 
-⋅⋅   -You can specify just the path to the file. If you do this the program will 
-    read in the first file, in the given file path, it sees with the correct file 
-    extension. As such, you should make sure that only one file with the correct 
-    file extension exists in the directory you give it. For example if you want 
-    to tell the program to find the BIM prequalification data in "C:/Downloads/" 
-    you simply type that after the "BIM_INPUT_DIR:" in the form of
-    "BIM_INPUT_DIR: C:/Downloads/". This will tell the program to look for a .csv
-    file in the Downloads folder on the C drive.
+  -You can specify just the path to the file. If you do this the program will 
+   read in the first file, in the given file path, it sees with the correct file 
+   extension. As such, you should make sure that only one file with the correct 
+   file extension exists in the directory you give it. For example if you want 
+   to tell the program to find the BIM prequalification data in "C:/Downloads/" 
+   you simply type that after the "BIM_INPUT_DIR:" in the form of
+   "BIM_INPUT_DIR: C:/Downloads/". This will tell the program to look for a .csv
+   file in the Downloads folder on the C drive.
 
- ⋅⋅  -You can specify an explicit file name. If you do this the program will look
-    for a file with the exact name you provide it in the directory you provide 
-    it. For example if you want to tell the program to find the Asite
-    prequalification data in "N:/PROGRAMS/" and the file name is "Form Listing.xls"
-    would type "N:/PROGRAMS/Form Listing.xls" after "ASITE_INPUT_DIR:" in the form
-    of "ASITE_INPUT_DIR: N:/PROGRAMS/Form Listing.xls". 
+  -You can specify an explicit file name. If you do this the program will look
+   for a file with the exact name you provide it in the directory you provide 
+   it. For example if you want to tell the program to find the Asite
+   prequalification data in "N:/PROGRAMS/" and the file name is "Form Listing.xls"
+   would type "N:/PROGRAMS/Form Listing.xls" after "ASITE_INPUT_DIR:" in the form
+   of "ASITE_INPUT_DIR: N:/PROGRAMS/Form Listing.xls". 
 
- ⋅-If the line has a "_PATH:" you can treat it exactly like a line with "_DIR:" at the end of
-  it except you must give it a filename at the end of the file path you enter. For example
-  if there is a line "BIM_TO_ASITE_STATUS_TRANSLATIONS_PATH:" you may enter a path after it 
-  in the form of "BIM2AsiteStatusTranslations/BimAsiteStatusTrans.txt" or even 
-  "N:/whatever/path/you/want/fileName.txt" but you may not enter a path without a filename 
-  and proper extension at the end of it like "relative/file/path/" or "N:/some/path/". If you 
-  give it a file path like "relative/file/path/" or "N:/some/path/" you will get an error 
-  message saying that it can't find the file.
+-If the line has a "_PATH:" you can treat it exactly like a line with "_DIR:" at the end of
+ it except you must give it a filename at the end of the file path you enter. For example
+ if there is a line "BIM_TO_ASITE_STATUS_TRANSLATIONS_PATH:" you may enter a path after it 
+ in the form of "BIM2AsiteStatusTranslations/BimAsiteStatusTrans.txt" or even 
+ "N:/whatever/path/you/want/fileName.txt" but you may not enter a path without a filename 
+ and proper extension at the end of it like "relative/file/path/" or "N:/some/path/". If you 
+ give it a file path like "relative/file/path/" or "N:/some/path/" you will get an error 
+ message saying that it can't find the file.
 
-  ⋅⋅ -If the line is "OUTPUT_PATH:" you must treat it just like a normal "_PATH" line but you can 
-    make the filename whatever you'd like and the program will append the date and military time 
-    to the end of the name right before the file extension. For example if the military time was 
-    4:33:25 seconds, the date was 7/19/2016 and you want the output file to be generated in 
-    "C:/Documents" and you want its name to be "usefulData.xlsx" you would type 
-    "C:/Documents/usefulData.xlsx" after "OUTPUT_PATH:" in the form 
-    "OUTPUT_PATH:C:/Documents/usefulData.xlsx". If you then ran the program a file called 
-    "usefulData-160719-163325.xlsx" would get generated in the Documents folder on the C drive. If 
-    another .xlsx file already exists in that folder it will be moved to the path given after the line 
-    "DUMP_FOLDER:" in settings.txt. As such make sure that there aren't any other .xlsx files in that 
-    folder besides the last output file that was generated. 
+  -If the line is "OUTPUT_PATH:" you must treat it just like a normal "_PATH" line but you can 
+   make the filename whatever you'd like and the program will append the date and military time 
+   to the end of the name right before the file extension. For example if the military time was 
+   4:33:25 seconds, the date was 7/19/2016 and you want the output file to be generated in 
+   "C:/Documents" and you want its name to be "usefulData.xlsx" you would type 
+   "C:/Documents/usefulData.xlsx" after "OUTPUT_PATH:" in the form 
+   "OUTPUT_PATH:C:/Documents/usefulData.xlsx". If you then ran the program a file called 
+   "usefulData-160719-163325.xlsx" would get generated in the Documents folder on the C drive. If 
+   another .xlsx file already exists in that folder it will be moved to the path given after the line 
+   "DUMP_FOLDER:" in settings.txt. As such make sure that there aren't any other .xlsx files in that 
+   folder besides the last output file that was generated. 
 
-⋅ -If the line is "DUMP_FOLDER:" you can treat it exactly like a line with "_DIR:" at
-  the end of it except you cannot give it a filename at the end of the file path you
-  enter. For example for "DUMP_FOLDER:" you may enter a path after it in the form of 
-  "relative/file/path/" or even "N:/whatever/path/you/want/" but you may not enter a 
-  path with a filename at the end of it like 
-  "relative/file/path/filename.extension" or "N:/some/path/filename.extension". If 
-  you give it a file path like "relative/file/path/filename.extension" or 
-  "N:/some/path/filename.exstension" you will get an error message saying that it 
-  can't find the file.
+-If the line is "DUMP_FOLDER:" you can treat it exactly like a line with "_DIR:" at
+ the end of it except you cannot give it a filename at the end of the file path you
+ enter. For example for "DUMP_FOLDER:" you may enter a path after it in the form of 
+ "relative/file/path/" or even "N:/whatever/path/you/want/" but you may not enter a 
+ path with a filename at the end of it like 
+ "relative/file/path/filename.extension" or "N:/some/path/filename.extension". If 
+ you give it a file path like "relative/file/path/filename.extension" or 
+ "N:/some/path/filename.exstension" you will get an error message saying that it 
+ can't find the file.
 
- ⋅-If the line has "_Header_Row_Num:" you must specify what row, in the spreadsheet the program 
-  should start reading in the data from. For example if there's a header on row 1 for 
-  the title of the document and a header on row 2 for the names of each row and the first
-  of the data you want read in is on row 3 you would type "2" after "_Row_Num:" in the form
-  "_Row_Num: 2". If you enter the number 0 for these lines this program will attempt to find the
-  the header rows automatically.
+-If the line has "_Header_Row_Num:" you must specify what row, in the spreadsheet the program 
+ should start reading in the data from. For example if there's a header on row 1 for 
+ the title of the document and a header on row 2 for the names of each row and the first
+ of the data you want read in is on row 3 you would type "2" after "_Row_Num:" in the form
+ "_Row_Num: 2". If you enter the number 0 for these lines this program will attempt to find the
+ the header rows automatically.
 
- ⋅-If the line has "_Col_Num:" you must specify what column, in the spreadsheet the program 
-  should be reading in data from. For example if in the BIM prequalification listing the 
-  Company IDs were in column 4 then you would type "4" after the line "BIM_ID_Col_Num:"
-  in the form "BIM_ID_Col_Num: 4". If you enter the number 0 for these lines this program will 
-  attempt to find the the column numbers automatically.
+-If the line has "_Col_Num:" you must specify what column, in the spreadsheet the program 
+ should be reading in data from. For example if in the BIM prequalification listing the 
+ Company IDs were in column 4 then you would type "4" after the line "BIM_ID_Col_Num:"
+ in the form "BIM_ID_Col_Num: 4". If you enter the number 0 for these lines this program will 
+ attempt to find the the column numbers automatically.
 
-⋅⋅ -If the line is "Translation_Delimiter:" enter what you want the delimiter to be between
-  the Bim statuses if there are more than one Bim statuses that translate to just one Asite
-  status. For example if in your translation .txt(this will be covered later on in detail) 
-  file you have a line like:
-  "Pending Approval: Requested, Incomplete, To be Contacted, Received, Evaluated, Reviewed" 
-  you must indicate that you want the delimiter to be "," by typing it after the line 
-  "Translation_Delimiter:" in the form "Translation_Delimiter: ," in the settings.txt file.
-  If you decided that you wanted to use ","s in the status names you could choose a different
-  delimiter so that those statuses are not read as two separate statuses. For example you have 
-  a line translation .txt file like:
-  "Pending Approval: Requested, Ralph, check this out, Received, Evaluated, Reviewed"
-  and you wanted "Ralph, check this out" to be read as one status you would first pick a new 
-  delimiter, say "/", and replace all the ","s in the translation .txt file with "/" except 
-  for the ","s that you want to be part of a status so the sample line would end up like 
-  this: "Pending Approval: Requested/ Ralph, check this out/ Received/ Evaluated/ Reviewed"
-  You would the update the settings.txt file
-  to reflect that by typing "/" instead of "," after the line "Translation_Delimiter:" in the 
-  form "Translation_Delimiter: /". The program would the read "Ralph, check this out" as one
-  status without a problem.
+-If the line is "Translation_Delimiter:" enter what you want the delimiter to be between
+ the Bim statuses if there are more than one Bim statuses that translate to just one Asite
+ status. For example if in your translation .txt(this will be covered later on in detail) 
+ file you have a line like:
+ "Pending Approval: Requested, Incomplete, To be Contacted, Received, Evaluated, Reviewed" 
+ you must indicate that you want the delimiter to be "," by typing it after the line 
+ "Translation_Delimiter:" in the form "Translation_Delimiter: ," in the settings.txt file.
+ If you decided that you wanted to use ","s in the status names you could choose a different
+ delimiter so that those statuses are not read as two separate statuses. For example you have 
+ a line translation .txt file like:
+ "Pending Approval: Requested, Ralph, check this out, Received, Evaluated, Reviewed"
+ and you wanted "Ralph, check this out" to be read as one status you would first pick a new 
+ delimiter, say "/", and replace all the ","s in the translation .txt file with "/" except 
+ for the ","s that you want to be part of a status so the sample line would end up like 
+ this: "Pending Approval: Requested/ Ralph, check this out/ Received/ Evaluated/ Reviewed"
+ You would the update the settings.txt file
+ to reflect that by typing "/" instead of "," after the line "Translation_Delimiter:" in the 
+ form "Translation_Delimiter: /". The program would the read "Ralph, check this out" as one
+ status without a problem.
 
 
 ##### Advanced Program Functions for File Handling 
