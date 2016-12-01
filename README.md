@@ -254,13 +254,13 @@ potential to crash the program without an error message and if not the program w
 produce a file with incorrect information about the statuses. As such it is important to 
 edit this file correctly. For example here are the status translations as of July 18, 2016:
 
-Approval on Hold: Hold
-Rejected - DO NOT USE: Rejected
-Declined to Submit: Declined
-Unresponsive: Unresponsive
-Owner-Preferred (Not for CM-at-Risk): Owner
-Approved: Martin
-Pending Approval: Requested, Incomplete, To be Contacted, Received, Evaluated, Reviewed
+    Approval on Hold: Hold
+    Rejected - DO NOT USE: Rejected
+    Declined to Submit: Declined
+    Unresponsive: Unresponsive
+    Owner-Preferred (Not for CM-at-Risk): Owner
+    Approved: Martin
+    Pending Approval: Requested, Incomplete, To be Contacted, Received, Evaluated, Reviewed
 
 Notice that the Asite statuses are on the left side of the ":" and only unique key words
 of the BIM statuses are on the right side of the ":". This is the format in which status
@@ -277,7 +277,7 @@ status name and has the potential to crash the program or produce incorrect data
 example if the delimiter is declared as "," in the settings.txt then you could write
 a line like the following to indicate multiple BIM statuses translate to one Asite status:
 
-Pending Approval: Requested, Incomplete, To be Contacted, Received, Evaluated, Reviewed
+    Pending Approval: Requested, Incomplete, To be Contacted, Received, Evaluated, Reviewed
 
 Note that there are no spaces after each key word(s). If you were to put a space after
 a key word(s) like "To be Contacted ," the program will read the key word in as including 
@@ -291,8 +291,8 @@ uniquely identifies the BIM status after the ":". For example if "Requested" and
 status on BIM and "Pending" was a unique key word for that BIM status then you would 
 type the following lines in the translation .txt:
 
-Requested: Pending
-Incomplete: Pending
+    Requested: Pending
+    Incomplete: Pending
 
 Note that there are no spaces before or after the Asite statuses. If you put a space
 before or after a Asite status like " Incomplete :" the program will read the 
@@ -317,18 +317,18 @@ read this section and the CONFIGURATION section and are still unable to have the
 program run properly refer to the SUPPORT section.
 
 
-"ERROR: Cannot find the settings.txt file.
- This program cannot run properly without it.
- Enter any key to EXIT program..."
+    "ERROR: Cannot find the settings.txt file.
+    This program cannot run properly without it.
+    Enter any key to EXIT program..."
 
 If you get this error either settings.txt is missing from the file directory
 that you are keeping this program in or the settings.txt was renamed and the 
 program no longer recognizes it.
 
 
-"ERROR: \\NLS-FS01\some\path is not a valid path.
-Closing all File Explorer windows and try again.		    
-Enter any key to EXIT program..."
+    "ERROR: \\NLS-FS01\some\path is not a valid path.
+    Closing all File Explorer windows and try again.		    
+    Enter any key to EXIT program..."
 
 If you get this error close all File explorer windows and start over.
 Do not use short cuts to get back to the N drive. Go to the N drive by 
@@ -338,11 +338,11 @@ error message only comes up if you use absolute file paths or if you are
 using this programs drag and drop featcher. 
 
 
-"ERROR: Could not find the NameOfColumn column in one of the input files!!!
-This program cannot run properly without it.
-To fix this manually enter the appropriate column number in the settings.txt
-Consult the ReadMe.txt if you are not sure of how to properly modify the file.
-Enter any key to EXIT program..."
+    "ERROR: Could not find the NameOfColumn column in one of the input files!!!
+    This program cannot run properly without it.
+    To fix this manually enter the appropriate column number in the settings.txt
+    Consult the ReadMe.txt if you are not sure of how to properly modify the file.
+    Enter any key to EXIT program..."
 
 If you get this Error then you used then you set this program to automatically
 find the column numbers of the data that needs to be read in. If this is true
@@ -352,11 +352,11 @@ column where the data can be found. Please check the CONFIGURATION section in
 this read me if you are unsure of how to do this correctly.
 
 
-"ERROR: Cannot find the following A_Line_From_Settings_File: some/file/path
- This program cannot run properly without it.
- Please check that the file path is entered correctly in the settings.txt file.
- Consult the ReadMe.txt if you are not sure of how to properly modify the file.
- Enter any key to EXIT program..."
+    "ERROR: Cannot find the following A_Line_From_Settings_File: some/file/path
+    This program cannot run properly without it.
+    Please check that the file path is entered correctly in the settings.txt file.
+    Consult the ReadMe.txt if you are not sure of how to properly modify the file.
+    Enter any key to EXIT program..."
 
 If you get this error the path, filename, and/or extension was entered wrong in 
 settings.txt or the file or path does not exist. Make sure that the path, filename, 
@@ -364,11 +364,11 @@ and extension is indeed entered correctly in the settings.txt and the file and p
 does in fact exist.
 
 
-"ERROR: some/relative/path/to/a/file.extension is empty!!!
- This program cannot run properly without it.
- Please check that required information is properly entered in this file.
- Consult the ReadMe.txt if you are not sure of how to properly modify the file.
- Enter any key to EXIT program..."
+    "ERROR: some/relative/path/to/a/file.extension is empty!!!
+    This program cannot run properly without it.
+    Please check that required information is properly entered in this file.
+    Consult the ReadMe.txt if you are not sure of how to properly modify the file.
+    Enter any key to EXIT program..."
 
 If you get this error either the file has no text in it. Make sure the indicated
 file has at least some number of line of text in the appropriate format as explained
@@ -376,22 +376,22 @@ in the CONFIGURATION section of this ReadMe. This error should only pop up if th
 settings.txt or the translation .txt is blank.
 
 
-"ERROR: the line something_somthing: is missing or not where it's supposed to be in settings.txt!!!
- This program cannot run properly without it.
- Please check that required information is properly entered in this file.
- Consult the ReadMe.txt if you are not sure of how to properly modify the file.
- Enter any key to EXIT program..."
+    "ERROR: the line something_somthing: is missing or not where it's supposed to be in settings.txt!!!
+    This program cannot run properly without it.
+    Please check that required information is properly entered in this file.
+    Consult the ReadMe.txt if you are not sure of how to properly modify the file.
+    Enter any key to EXIT program..."
 
 If you get this error the content of settings.txt is either missing lines that the 
 program expects, there are extra lines the program doesn't expect, or the lines 
 are out of the expected sequence. Make sure settings.txt's configuration matches 
 the description in the CONFIGURATION section.
 
-"ERROR: The line "OUTPUT_PATH:" in settings has no file path to write to.
- This program cannot run properly without it.
- Please check that the file path is entered correctly in the settings.txt file.
- Consult the ReadMe.txt if you are not sure of how to properly modify the file.
- Enter any key to EXIT program..."
+    "ERROR: The line "OUTPUT_PATH:" in settings has no file path to write to.
+    This program cannot run properly without it.
+    Please check that the file path is entered correctly in the settings.txt file.
+    Consult the ReadMe.txt if you are not sure of how to properly modify the file.
+    Enter any key to EXIT program..."
 
 If you get this error then you did not put a filename or a path with a filename at 
 the end of it for the line labeled "OUTPUT_PATH:" in the settings.txt. You can put in
