@@ -108,22 +108,22 @@ follows:
   consequences and will defiantly cause the program to not function correctly. The
   two ways you can enter a path are as follows:
 
-   >You can enter a relative(to the directory the program is in) file path 
+   -You can enter a relative(to the directory the program is in) file path 
     such as "relative/file/path/". This tells the program to look for a file
     with in a sub directory of the folder that the program lives in. If you 
     give it no path after "_DIR:" the program will look for the file in the
     exact same directory as where the program lives. For example:
 
-    *If you were to type "Data/" after the line "ASITE_INPUT_DIR:" in the form 
+    -If you were to type "Data/" after the line "ASITE_INPUT_DIR:" in the form 
      "ASITE_INPUT_DIR: Data/" the program will look for a .xls file containing 
      prequalification data in a folder called "Data" in the same directory that 
      the program is stored in. 
 
-    *If you were to type nothing after the line "ASITE_INPUT_DIR:" the program 
+    -If you were to type nothing after the line "ASITE_INPUT_DIR:" the program 
      will look for a .xls file containing prequalification data in same folder 
      that the program is stored in.
 
-   >You can enter an absolute file path such as "N:/whatever/path/you/want/".
+   -You can enter an absolute file path such as "N:/whatever/path/you/want/".
     If you are an experienced Windows or Linux user this should be the
     type of directory scheme you are used to seeing(In Windows they use 
     '\' instead of '/' but this program doesn't care which you use). For example
@@ -133,7 +133,7 @@ follows:
 
  -There are also two ways you can have this program look for a file:
 
-   >You can specify just the path to the file. If you do this the program will 
+   -You can specify just the path to the file. If you do this the program will 
     read in the first file, in the given file path, it sees with the correct file 
     extension. As such, you should make sure that only one file with the correct 
     file extension exists in the directory you give it. For example if you want 
@@ -142,7 +142,7 @@ follows:
     "BIM_INPUT_DIR: C:/Downloads/". This will tell the program to look for a .csv
     file in the Downloads folder on the C drive.
 
-   >You can specify an explicit file name. If you do this the program will look
+   -You can specify an explicit file name. If you do this the program will look
     for a file with the exact name you provide it in the directory you provide 
     it. For example if you want to tell the program to find the Asite
     prequalification data in "N:/PROGRAMS/" and the file name is "Form Listing.xls"
@@ -158,7 +158,7 @@ follows:
   give it a file path like "relative/file/path/" or "N:/some/path/" you will get an error 
   message saying that it can't find the file.
 
-   >If the line is "OUTPUT_PATH:" you must treat it just like a normal "_PATH" line but you can 
+   -If the line is "OUTPUT_PATH:" you must treat it just like a normal "_PATH" line but you can 
     make the filename whatever you'd like and the program will append the date and military time 
     to the end of the name right before the file extension. For example if the military time was 
     4:33:25 seconds, the date was 7/19/2016 and you want the output file to be generated in 
