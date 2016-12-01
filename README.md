@@ -63,7 +63,7 @@ program works on a whole refer to the TRUBLESHOOTING section. We will
 start with the settings.txt and then move onto the other inputs the 
 program reads in.
 
-** About the settings.txt **
+** About the settings.txt
 The settings.txt file must be in the same directory as this program. 
 This program is very particular about how this file is set up. Do not
 change the name of this file and do not add lines that aren't required. 
