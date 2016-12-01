@@ -2,6 +2,10 @@ CONTENTS OF THIS FILE
 ---------------------
 -BimAsiteMappingTool.exe
 
+-BimAsiteMappingTool(source).py
+
+-Samples.zip
+
 -Data/settings.txt
 
 -Data/ReadMe.txt
