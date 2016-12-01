@@ -6,8 +6,6 @@ CONTENTS OF THIS FILE
 
 -BimAsiteMappingTool(source).py
 
--Samples.zip
-
 -Data/settings.txt
 
 -Data/ReadMe.txt
