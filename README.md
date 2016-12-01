@@ -71,27 +71,28 @@ change the name of this file and do not add lines that aren't required.
 If you do, it might give you an error message (or worse, crash without 
 any error message). It must have 21 lines(including the 3 blank lines) 
 in the given order that read as follows:
-[Asite Input]
-ASITE_INPUT_DIR: 
-Asite_Header_Row_Num: 0
-Asite_ID_Col_Num: 0
-Asite_Company_Col_Num: 0
-Asite_Status_Col_Num: 0
 
-[BIM Input]
-BIM_INPUT_DIR: 
-BIM_Header_Row_Num: 0
-BIM_ID_Col_Num: 0
-BIM_Company_Col_Num: 0
-BIM_Status_Col_Num: 0
+    [Asite Input]
+    ASITE_INPUT_DIR: 
+    Asite_Header_Row_Num: 0
+    Asite_ID_Col_Num: 0
+    Asite_Company_Col_Num: 0
+    Asite_Status_Col_Num: 0
 
-[Status Translation File]
-BIM_TO_ASITE_STATUS_TRANSLATIONS_PATH: Data/BimAsiteStatusTrans.txt
-Translation_Delimiter: , 
+    [BIM Input]
+    BIM_INPUT_DIR: 
+    BIM_Header_Row_Num: 0
+    BIM_ID_Col_Num: 0
+    BIM_Company_Col_Num: 0
+    BIM_Status_Col_Num: 0
 
-[Output]
-OUTPUT_PATH: preqMap.xlsx
-DUMP_FOLDER: Archive/
+    [Status Translation File]
+    BIM_TO_ASITE_STATUS_TRANSLATIONS_PATH: Data/BimAsiteStatusTrans.txt
+    Translation_Delimiter: , 
+
+    [Output]
+    OUTPUT_PATH: preqMap.xlsx
+    DUMP_FOLDER: Archive/
 
 For each line with a ":" in it anything after the ":" can be altered to your 
 liking so long as you edit it correctly. Each line in the above example that 
