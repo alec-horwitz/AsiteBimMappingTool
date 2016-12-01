@@ -63,6 +63,7 @@ program works on a whole refer to the TRUBLESHOOTING section. We will
 start with the settings.txt and then move onto the other inputs the 
 program reads in.
 
+
 #####About the settings.txt
 The settings.txt file must be in the same directory as this program. 
 This program is very particular about how this file is set up. Do not
@@ -212,6 +213,7 @@ follows:
   to reflect that by typing "/" instead of "," after the line "Translation_Delimiter:" in the 
   form "Translation_Delimiter: /". The program would the read "Ralph, check this out" as one
   status without a problem.
+
 
 ##### Advanced Program Functions for File Handling 
 If the path given after "DUMP_FOLDER:" is the same as the path given for any 
