@@ -2,6 +2,8 @@ CONTENTS OF THIS FILE
 ---------------------
 -BimAsiteMappingTool.exe
 
+-BimAsiteMappingToolManual.docx
+
 -BimAsiteMappingTool(source).py
 
 -Samples.zip
